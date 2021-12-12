@@ -1,0 +1,253 @@
+.header {
+    padding-bottom: 117px;
+
+    &__container {
+        padding-top: 50px;
+        margin: 0 auto;
+        background: url(../img/Decore.png);
+        background-repeat: no-repeat;
+        background-position: top right;
+        background-size: 55%;
+    }
+
+    &__top {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        &-right {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 70%;
+            @media (max-width: 746px) {
+                flex-direction: column;
+            }
+        }
+
+        &-center {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            @media (max-width: 746px) {
+                margin-bottom: 15px;
+            }
+        }
+
+        &-buttons {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+    }
+
+    &__logo {
+        cursor: pointer;
+    }
+
+    @media (max-width: 991px) {
+        &__top {
+            flex-direction: column;
+
+            &-right {
+                width: 90%;
+            }
+        }
+        &__logo-link {
+            margin-bottom: 15px;
+        }
+    }
+
+    &__list {
+        display: flex;
+        margin: 0;
+        justify-content: space-between;
+        padding-left: 0;
+        @media (max-width: 369px) {
+            flex-direction: column;
+            align-items: center;
+        }
+    }
+
+    &__item {
+        list-style: none;
+        margin-right: 20px;
+        &:last-child {
+            margin-right: 0;
+        }
+        @media (max-width: 369px) {
+            margin: 0;
+        }
+    }
+
+    &__link {
+        text-decoration: none;
+        font-family: Open Sans;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 17px;
+        line-height: 22px;
+        color: $secondary;
+        
+        &:hover {
+            color: $accent;
+            opacity: 0.7;
+            transition-duration: 0.5s;
+        }
+    }
+
+    &__select {
+        font-family: open Sans;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 17px;
+        line-height: 22px;
+        color: $secondary;
+        border: none;
+        text-transform: uppercase;
+        cursor: pointer;
+        background: none;
+
+        &:hover {
+            color: $accent;
+            opacity: 0.7;
+            transition-duration: 0.5s;
+        }
+    }
+
+    &__hero {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background: url(../img/girl.png);
+        background-repeat: no-repeat;
+        background-position: bottom right;
+        background-size: 55%;
+        @media (max-width: 746px) {
+            background: none;
+            justify-content: center;
+        }
+        
+
+        &-content {
+            margin-top: 134px;
+            position: relative;
+            @media (max-width: 746px) {
+                margin-top: 70px;
+            }
+
+        }
+
+        &-line {
+            position: absolute;
+            top: 118px;
+            left: 250px;
+            z-index: -1;
+            @media (max-width: 991px) {
+                top: 106px;
+                left: 216px;
+                width: 70%;
+            }
+            @media (max-width: 616px) {
+                width: 50%;
+            }
+            @media (max-width: 442px) {
+                top: 90px;
+                left: 150px;
+            }
+            @media (max-width: 339px) {
+                top: 85px;
+                left: 120px;
+            }
+            
+        }
+
+        &-span {
+            font-family: Poppins;
+            font-style: normal;
+            font-weight: bold;
+            font-size: 20px;
+            line-height: 30px;
+            text-transform: uppercase;
+            color: $accent;
+            @media (max-width: 442px) {
+                font-size: 15px;
+            }
+            @media (max-width: 339px) {
+                font-size: 12px;
+            }
+        }
+
+        &-title {
+            margin-top: 12px;
+            margin-bottom: 30px;
+            font-family: Volkhov;
+            font-style: normal;
+            font-weight: bold;
+            font-size: 84px;
+            line-height: 89px;
+            letter-spacing: -0.04em;
+            color: $dark;
+            @media (max-width: 991px) {
+                font-size: 72px;
+                line-height: 77px;
+            }
+            @media (max-width: 520px) {
+                font-size: 64px;
+                line-height: 59px;
+            }
+            @media (max-width: 442px) {
+                font-size: 48px;
+            }
+            @media (max-width: 339px) {
+                font-size: 40px;
+            }
+        }
+
+        &-text {
+            margin-top: 0;
+            margin-bottom: 34px;
+            font-family: Poppins;
+            font-style: normal;
+            font-weight: 500;
+            font-size: 16px;
+            line-height: 30px;
+            color: $grey;
+        }
+
+        &-link {
+            text-decoration: none;
+            font-family: Poppins;
+            font-style: normal;
+            font-weight: 500;
+            font-size: 17px;
+            line-height: 25px;
+            color: #686D77;
+
+            &:hover {
+                color: $accent;
+                opacity: 0.7;
+                transition-duration: 0.5s;
+            }
+
+            @media (max-width: 419px) {
+                display: none;
+            }
+        }
+
+        &-buttons {
+            @media (max-width: 419px) {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+            }
+        }
+    }
+
+    &__br {
+        @media (max-width: 484px){
+            display: none;
+        }
+    }
+
+}

@@ -1,0 +1,97 @@
+.button {
+    &__login {
+        font-family: open Sans;
+        border: 0;
+        font-weight: 500;
+        font-style: normal;
+        line-height: 22px;
+        font-size: 17px;
+        background: none;
+        color: $secondary;
+        margin-right: 52px;
+
+        @media (max-width: 991px) {
+            margin-right: 15px;
+        }
+
+        &:hover {
+            cursor: pointer;
+            color: $accent;
+            opacity: 0.7;
+            transition-duration: 0.5s;
+        }
+    }
+
+    &__sing-up {
+        border: 1px solid #212832;
+        box-sizing: border-box;
+        border-radius: 5px;
+        font-family: open Sans;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 17px;
+        line-height: 22px;
+        color: $secondary;
+        padding: 9px 22px;
+        margin-right: 63px;
+        background: none;
+
+        @media (max-width: 991px) {
+            margin-right: 15px;
+        }
+
+        @media (max-width: 747px) {
+            background: $accent;
+            color: #ffffff;
+        }
+
+        &:hover {
+            cursor: pointer;
+            background: $accent;
+            opacity: 0.7;
+            transition-duration: 0.5s;
+            color: #ffffff;
+        }
+    }
+
+    &__find {
+        background: #F1A501;
+        box-shadow: 0px 20px 35px rgba(241, 165, 1, 0.15);
+        border-radius: 10px;
+        border: 0;
+        font-family: open Sans;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 23px;
+        text-align: center;
+        color: #FFFFFF;
+        padding: 19px 26px;
+        margin-right: 44px;
+        cursor: pointer;
+
+        &:hover {
+            opacity: 0.7;
+            transition-duration: 0.5s;
+        }
+
+        @media (max-width: 419px) {
+            margin-right: 0;
+        }
+    }
+
+    &__play {
+        background: #DF6951;
+        border-radius: 50%;
+        width: 52px;
+        height: 52px;
+        border: 0;
+        margin-right: 21px;
+        cursor: pointer;
+
+        &:hover {
+            opacity: 0.7;
+            transition-duration: 0.5s;
+        }
+    }
+}
