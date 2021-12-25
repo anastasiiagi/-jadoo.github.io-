@@ -3,6 +3,9 @@
     flex-direction: column;
     text-align: center;
     padding-bottom: 123px;
+    @media (max-width: 607px) {
+        padding-bottom: 70px;
+    }
 
     &__container {
         background: url(../img/stars.png);

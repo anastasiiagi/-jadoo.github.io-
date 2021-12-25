@@ -1,0 +1,109 @@
+.selling {
+    padding-bottom: 186px;
+    &__container {
+        position: relative;
+    }
+
+    &__rome {
+        background: url(../img/rome.jpg);
+        background-size: cover;
+    }
+
+    &__ben {
+        background: url(../img/tower.jpg);
+        background-size: cover;
+        @media (max-width: 607px) {
+            margin-top: 20px;
+        }
+    }
+
+    &__eur {
+        background: url(../img/eur.png);
+        background-size: cover;
+        @media (max-width: 996px) {
+            margin-top: 20px;
+        }
+    }
+
+    &__top {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    &__hero {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        @media (max-width: 996px) {
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
+    }
+
+    &__card {
+        filter: drop-shadow(0px 100px 80px rgba(0, 0, 0, 0.02)) drop-shadow(0px 64.8148px 46.8519px rgba(0, 0, 0, 0.0151852)) drop-shadow(0px 38.5185px 25.4815px rgba(0, 0, 0, 0.0121481)) drop-shadow(0px 20px 13px rgba(0, 0, 0, 0.01)) drop-shadow(0px 8.14815px 6.51852px rgba(0, 0, 0, 0.00785185)) drop-shadow(0px 1.85185px 3.14815px rgba(0, 0, 0, 0.00481481));
+        border-radius: 24px;
+        display: flex;
+        align-items: end;
+        width: 314px;
+        height: 457px;
+        @media (max-width: 996px) {
+            width: 45%;
+        }
+        @media (max-width: 607px) {
+            width: 96%;
+        }
+        
+
+        &-info {
+            background: white;
+            width: inherit;
+            padding: 27px 26px 27px 20px;
+            border-radius: 0 0 23px 23px;
+            @media (max-width: 996px) {
+                width: 100%;
+            }
+        }
+
+        &-price {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        &-block {
+            display: flex;
+            align-items: center;
+            margin-top: 20px;
+        }
+
+        &-days {
+            margin-left: 15px;
+            font-family: Poppins;
+            font-style: normal;
+            font-weight: 500;
+            font-size: 16px;
+            line-height: 124.5%;
+            color: $grey;
+        }
+    }
+
+    &__span {
+        font-family: Poppins;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 124.5%;
+        color: $grey;
+    }
+    &__img {
+        position: absolute;
+        z-index: -1;
+        right: -55px;
+        top: 378px;
+        @media (max-width: 996px) {
+            display: none;
+        }
+    }
+}

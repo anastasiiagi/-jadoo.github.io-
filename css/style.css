@@ -36,6 +36,7 @@ img {
   text-align: center;
   color: #5E6282;
   margin: 0;
+  text-align: center;
 }
 
 .title {
@@ -468,6 +469,12 @@ img {
   padding-bottom: 123px;
 }
 
+@media (max-width: 607px) {
+  .services {
+    padding-bottom: 70px;
+  }
+}
+
 .services__container {
   background: url(../img/stars.png);
   background-repeat: no-repeat;
@@ -564,5 +571,137 @@ img {
   left: -40px;
   top: 250px;
   z-index: -1;
+}
+
+.selling {
+  padding-bottom: 186px;
+}
+
+.selling__container {
+  position: relative;
+}
+
+.selling__rome {
+  background: url(../img/rome.jpg);
+  background-size: cover;
+}
+
+.selling__ben {
+  background: url(../img/tower.jpg);
+  background-size: cover;
+}
+
+@media (max-width: 607px) {
+  .selling__ben {
+    margin-top: 20px;
+  }
+}
+
+.selling__eur {
+  background: url(../img/eur.png);
+  background-size: cover;
+}
+
+@media (max-width: 996px) {
+  .selling__eur {
+    margin-top: 20px;
+  }
+}
+
+.selling__top {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.selling__hero {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+@media (max-width: 996px) {
+  .selling__hero {
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+}
+
+.selling__card {
+  filter: drop-shadow(0px 100px 80px rgba(0, 0, 0, 0.02)) drop-shadow(0px 64.8148px 46.8519px rgba(0, 0, 0, 0.0151852)) drop-shadow(0px 38.5185px 25.4815px rgba(0, 0, 0, 0.0121481)) drop-shadow(0px 20px 13px rgba(0, 0, 0, 0.01)) drop-shadow(0px 8.14815px 6.51852px rgba(0, 0, 0, 0.00785185)) drop-shadow(0px 1.85185px 3.14815px rgba(0, 0, 0, 0.00481481));
+  border-radius: 24px;
+  display: flex;
+  align-items: end;
+  width: 314px;
+  height: 457px;
+}
+
+@media (max-width: 996px) {
+  .selling__card {
+    width: 45%;
+  }
+}
+
+@media (max-width: 607px) {
+  .selling__card {
+    width: 96%;
+  }
+}
+
+.selling__card-info {
+  background: white;
+  width: inherit;
+  padding: 27px 26px 27px 20px;
+  border-radius: 0 0 23px 23px;
+}
+
+@media (max-width: 996px) {
+  .selling__card-info {
+    width: 100%;
+  }
+}
+
+.selling__card-price {
+  display: flex;
+  justify-content: space-between;
+}
+
+.selling__card-block {
+  display: flex;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.selling__card-days {
+  margin-left: 15px;
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 124.5%;
+  color: #5E6282;
+}
+
+.selling__span {
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 124.5%;
+  color: #5E6282;
+}
+
+.selling__img {
+  position: absolute;
+  z-index: -1;
+  right: -55px;
+  top: 378px;
+}
+
+@media (max-width: 996px) {
+  .selling__img {
+    display: none;
+  }
 }
 /*# sourceMappingURL=style.css.map */
