@@ -27,6 +27,36 @@ img {
   margin: 0 auto;
 }
 
+.span {
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 27px;
+  text-align: center;
+  color: #5E6282;
+  margin: 0;
+}
+
+.title {
+  font-family: Volkhov;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 50px;
+  line-height: 64px;
+  text-align: center;
+  text-transform: capitalize;
+  color: #14183E;
+  margin-top: 10px;
+  margin-bottom: 110px;
+}
+
+@media (max-width: 348px) {
+  .title {
+    font-size: 44px;
+  }
+}
+
 .button__login {
   font-family: open Sans;
   border: 0;
@@ -429,5 +459,110 @@ img {
   .header__br {
     display: none;
   }
+}
+
+.services {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  padding-bottom: 123px;
+}
+
+.services__container {
+  background: url(../img/stars.png);
+  background-repeat: no-repeat;
+  background-position: top right;
+}
+
+.services__hero {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+@media (max-width: 1096px) {
+  .services__hero {
+    flex-wrap: wrap;
+  }
+}
+
+.services__card {
+  position: relative;
+  width: 267px;
+  height: 314px;
+}
+
+.services__card:hover {
+  background: #FFFFFF;
+  box-shadow: 0px 100px 80px rgba(0, 0, 0, 0.02), 0px 64.8148px 46.8519px rgba(0, 0, 0, 0.0151852), 0px 38.5185px 25.4815px rgba(0, 0, 0, 0.0121481), 0px 20px 13px rgba(0, 0, 0, 0.01), 0px 8.14815px 6.51852px rgba(0, 0, 0, 0.00785185), 0px 1.85185px 3.14815px rgba(0, 0, 0, 0.00481481);
+  border-radius: 36px;
+  padding: 0 43px 45px 43px;
+  cursor: pointer;
+}
+
+.services__card:hover .hover-div {
+  display: inherit;
+}
+
+@media (max-width: 1096px) {
+  .services__card:hover .hover-div {
+    display: none;
+  }
+}
+
+@media (max-width: 1096px) {
+  .services__card {
+    width: 50%;
+  }
+}
+
+@media (max-width: 563px) {
+  .services__card {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  .services__card:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.services__card-title {
+  margin-top: 30px;
+  margin-bottom: 15px;
+  font-family: Open Sans;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 27px;
+  text-align: center;
+  color: #1E1D4C;
+  white-space: nowrap;
+}
+
+.services__card-text {
+  margin: 0;
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 26px;
+  text-align: center;
+  color: #5E6282;
+}
+
+.services__card2 {
+  margin-bottom: 12px;
+}
+
+.hover-div {
+  display: none;
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  background: #DF6951;
+  border-radius: 30px 0px 10px 0;
+  left: -40px;
+  top: 250px;
+  z-index: -1;
 }
 /*# sourceMappingURL=style.css.map */

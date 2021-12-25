@@ -25,3 +25,30 @@ img {
     padding: 0 15px;
     margin: 0 auto;
 }
+
+.span {
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 27px;
+    text-align: center;
+    color: $grey;
+    margin: 0;
+}
+
+.title {
+    font-family: Volkhov;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 50px;
+    line-height: 64px;
+    text-align: center;
+    text-transform: capitalize;
+    color: #14183E;
+    margin-top: 10px;
+    margin-bottom: 110px;
+    @media (max-width: 348px) {
+        font-size: 44px;;
+    }
+}
