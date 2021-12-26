@@ -945,4 +945,16 @@ img {
   margin-top: 10px;
   width: 156px;
 }
+
+.sponsors {
+  padding-bottom: 111px;
+}
+
+.sponsors__list {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0;
+  list-style: none;
+}
 /*# sourceMappingURL=style.css.map */
