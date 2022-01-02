@@ -95,4 +95,36 @@
         }
     }
 
+    &__subscribe {
+        background: linear-gradient(180deg, #FF946D 0%, #FF7D68 100%);
+        border-radius: 10px;
+        border: 0;
+        padding: 22px 50px;
+        font-family: Open Sans;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 17px;
+        line-height: 23px;
+        text-align: center;
+        color: #FFFFFF;
+        cursor: pointer;
+        &:active {
+            opacity: 0.7;
+        }
+        &::after {
+            content: url(../img/linetop.png);
+            top: 10px;
+            right: 16px;
+            opacity: 0.2;
+            position: absolute;
+            z-index: -1;
+            @media(max-width: 431px) {
+               display: none;
+            }
+        }
+        @media(max-width: 968px) {
+            margin-top: 20px;
+        }
+    }
+
 }

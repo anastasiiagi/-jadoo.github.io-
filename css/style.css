@@ -162,6 +162,46 @@ img {
   transition-duration: 0.5s;
 }
 
+.button__subscribe {
+  background: linear-gradient(180deg, #FF946D 0%, #FF7D68 100%);
+  border-radius: 10px;
+  border: 0;
+  padding: 22px 50px;
+  font-family: Open Sans;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 17px;
+  line-height: 23px;
+  text-align: center;
+  color: #FFFFFF;
+  cursor: pointer;
+}
+
+.button__subscribe:active {
+  opacity: 0.7;
+}
+
+.button__subscribe::after {
+  content: url(../img/linetop.png);
+  top: 10px;
+  right: 16px;
+  opacity: 0.2;
+  position: absolute;
+  z-index: -1;
+}
+
+@media (max-width: 431px) {
+  .button__subscribe::after {
+    display: none;
+  }
+}
+
+@media (max-width: 968px) {
+  .button__subscribe {
+    margin-top: 20px;
+  }
+}
+
 .header {
   padding-bottom: 117px;
 }
@@ -1153,6 +1193,96 @@ img {
 @media (max-width: 396px) {
   .sponsors__item {
     width: 100%;
+  }
+}
+
+.subscribe {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  padding-bottom: 70px;
+}
+
+.subscribe__container {
+  position: relative;
+}
+
+.subscribe__wrap {
+  padding: 78px 15px;
+  background: #DFD7F9;
+  opacity: 0.8;
+  border-radius: 129px 20px 20px 20px;
+}
+
+.subscribe__title {
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 33px;
+  line-height: 54px;
+  color: #5E6282;
+  margin-top: 0;
+  margin-bottom: 74px;
+}
+
+@media (max-width: 431px) {
+  .subscribe__title {
+    font-size: 28px;
+    line-height: 40px;
+    margin-bottom: 40px;
+  }
+}
+
+.subscribe__title::after {
+  content: url(../img/send-email.png);
+  position: absolute;
+  right: -22px;
+  top: -23px;
+}
+
+@media (max-width: 607px) {
+  .subscribe__title::after {
+    right: 15px;
+    top: 0;
+  }
+}
+
+.subscribe__title::before {
+  content: url(../img/linebottom.png);
+  position: absolute;
+  bottom: -15px;
+  left: 24px;
+  z-index: -1;
+  opacity: 0.2;
+}
+
+@media (max-width: 431px) {
+  .subscribe__title::before {
+    display: none;
+  }
+}
+
+.subscribe__input {
+  width: 100%;
+  max-width: 421px;
+  background: #FFFFFF;
+  border-radius: 10px;
+  border: none;
+  padding: 25px 31px;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 17px;
+  color: #39425D;
+  cursor: pointer;
+  margin-right: 24px;
+  outline: none;
+}
+
+@media (max-width: 968px) {
+  .subscribe__br {
+    display: none;
   }
 }
 /*# sourceMappingURL=style.css.map */
